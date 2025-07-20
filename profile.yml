@@ -1,0 +1,24 @@
+daily_metrics:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: fiery-tribute-466414-s2
+      dataset: bi_projects
+      location: US
+      keyfile: path/to/your/service-account.json
+      timeout_seconds: 300
+      priority: interactive
+      retries: 1
+    
+    prod:
+      type: bigquery
+      method: service-account
+      project: fiery-tribute-466414-s2
+      dataset: bi_projects_prod
+      location: US
+      keyfile: path/to/your/service-account.json
+      timeout_seconds: 300
+      priority: batch
+      retries: 3

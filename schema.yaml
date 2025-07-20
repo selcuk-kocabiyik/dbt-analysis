@@ -1,0 +1,97 @@
+version: 2
+
+sources:
+  - name: bi_projects
+    description: Raw gaming metrics data
+    tables:
+      - name: raw_user_daily_metrics
+        description: User-level daily activity metrics
+        columns:
+          - name: user_id
+            description: Unique user identifier
+            tests:
+              - not_null
+          - name: event_date
+            description: Date of user activity
+            tests:
+              - not_null
+          - name: platform
+            description: User platform (ANDROID/IOS)
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['ANDROID', 'IOS']
+          - name: country
+            description: User country code
+            tests:
+              - not_null
+          - name: iap_revenue
+            description: In-app purchase revenue
+            tests:
+              - not_negative
+          - name: ad_revenue
+            description: Ad revenue
+            tests:
+              - not_negative
+
+models:
+  - name: daily_metrics
+    description: Aggregated daily metrics by date, country, and platform
+    columns:
+      - name: event_date
+        description: Date of activity
+        tests:
+          - not_null
+          - unique_combination:
+              combination_of_columns: [event_date, country, platform]
+      - name: country
+        description: User country
+        tests:
+          - not_null
+      - name: platform
+        description: User platform
+        tests:
+          - not_null
+      - name: dau
+        description: Daily Active Users
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      - name: total_iap_revenue
+        description: Total in-app purchase revenue
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      - name: total_ad_revenue
+        description: Total ad revenue
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      - name: arpdau
+        description: Average revenue per daily active user
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+      - name: win_ratio
+        description: Ratio of victories to matches ended
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "between 0 and 1"
+      - name: defeat_ratio
+        description: Ratio of defeats to matches ended
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "between 0 and 1"
+
+tests:
+  - name: not_negative
+    sql: |
+      SELECT *
+      FROM {{ ref('model') }}
+      WHERE {{ column_name }} < 0
