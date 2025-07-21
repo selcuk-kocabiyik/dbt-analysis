@@ -4,7 +4,7 @@ sources:
   - name: bi_projects
     description: Raw gaming metrics data
     tables:
-      - name: raw_user_daily_metrics
+      - name: dataset
         description: User-level daily activity metrics
         columns:
           - name: user_id
