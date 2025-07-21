@@ -1,3 +1,4 @@
 dbt_internal_packages
 target
 dbt_internal_packages/
+logs
