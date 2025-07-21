@@ -6,7 +6,8 @@ Kullanıcı seviyesindeki günlük oyun metriklerinden toplanmış günlük metr
 
 Bu proje, ham kullanıcı seviyesindeki günlük oyun metriklerini, oyun oynama, para kazanma ve performans sinyallerini gün, ülke ve platform bazında özetleyen toplanmış bir modele dönüştürür.
 
-## Kurulum
+![Output Model Verisi](images/example.png)
+
 
 ### Gereksinimler
 - DBT Core kurulu

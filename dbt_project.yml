@@ -20,4 +20,3 @@ models:
     +partition_by:
       field: event_date
       data_type: date
-    +cluster_by: ["country", "platform"]
