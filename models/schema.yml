@@ -1,0 +1,92 @@
+version: 2
+
+# Source tanımlaması
+sources:
+  - name: bi_projects
+    description: "Gaming analytics raw data source"
+    tables:
+      - name: dataset
+        description: "Raw gaming events and user metrics"
+        columns:
+          - name: event_date
+            description: "Date of the gaming event"
+            tests:
+              - not_null
+          - name: user_id
+            description: "Unique identifier for each user"
+            tests:
+              - not_null
+          - name: country
+            description: "User's country code"
+            tests:
+              - not_null
+          - name: platform
+            description: "Gaming platform (iOS, Android, etc.)"
+            tests:
+              - not_null
+          - name: total_session_duration
+            description: "Total session duration in seconds"
+          - name: iap_revenue
+            description: "In-app purchase revenue"
+          - name: ad_revenue
+            description: "Advertising revenue"
+          - name: match_start_count
+            description: "Number of matches started"
+          - name: match_end_count
+            description: "Number of matches completed"
+          - name: victory_count
+            description: "Number of victories"
+          - name: defeat_count
+            description: "Number of defeats"
+          - name: server_connection_error
+            description: "Number of server connection errors"
+
+# Model tanımlaması
+models:
+  - name: gaming_metrics
+    description: "Aggregated gaming metrics with DAU, revenue, and performance indicators"
+    columns:
+      - name: event_date
+        description: "Date of metrics"
+        tests:
+          - not_null
+      - name: country
+        description: "Country code"
+        tests:
+          - not_null
+      - name: platform
+        description: "Gaming platform"
+        tests:
+          - not_null
+      - name: dau
+        description: "Daily Active Users (session >= 10 seconds)"
+        tests:
+          - not_null
+      - name: total_iap_revenue
+        description: "Total in-app purchase revenue"
+      - name: total_ad_revenue
+        description: "Total advertising revenue"
+      - name: arpdau
+        description: "Average Revenue Per Daily Active User"
+      - name: matches_started
+        description: "Total matches started by qualified users"
+      - name: match_per_dau
+        description: "Average matches per DAU"
+      - name: win_ratio
+        description: "Win ratio (victories/total matches)"
+      - name: defeat_ratio
+        description: "Defeat ratio (defeats/total matches)"
+      - name: server_error_per_dau
+        description: "Average server errors per DAU"
+
+    tests:
+      - unique:
+          column_name: "concat(event_date, '-', country, '-', platform)"
+      - dbt_utils.accepted_range:
+          column_name: win_ratio
+          min_value: 0
+          max_value: 1
+      - dbt_utils.accepted_range:
+          column_name: defeat_ratio
+          min_value: 0
+          max_value: 1

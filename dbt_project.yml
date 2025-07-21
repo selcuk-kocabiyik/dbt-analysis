@@ -1,7 +1,7 @@
-name: 'daily_metrics'
+name: "vertigo_case"
 version: '1.0.0'
 
-profile: 'daily_metrics'
+profile: "fiery-tribute-466414-s2"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]

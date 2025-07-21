@@ -1,0 +1,11 @@
+fiery-tribute-466414-s2:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: fiery-tribute-466414-s2
+      dataset: bi_projects
+      threads: 1
+      location: US
+      keyfile: /Users/selcukkocabiyik/Desktop/case-repo/fiery-tribute-466414-s2-e11e41cc80a3.json

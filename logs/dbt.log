@@ -1,0 +1,558 @@
+[0m22:42:37.362533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eb42d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f2d5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f2dd90>]}
+
+
+============================== 22:42:37.373904 | 2b22418d-7d5c-4470-895c-344c9f751cee ==============================
+[0m22:42:37.373904 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:42:37.374316 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:37.376521 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fiery-tribute-466414-s2'
+[0m22:42:37.411101 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.14526446, "process_in_blocks": "0", "process_kernel_time": 0.541629, "process_mem_max_rss": "89538560", "process_out_blocks": "0", "process_user_time": 1.450772}
+[0m22:42:37.411505 [debug] [MainThread]: Command `dbt run` failed at 22:42:37.411414 after 0.15 seconds
+[0m22:42:37.411805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f2d9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a63c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae3a90>]}
+[0m22:42:37.412105 [debug] [MainThread]: Flushing usage events
+[0m22:42:38.449587 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:21.190611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10497c7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e0d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10497b550>]}
+
+
+============================== 22:45:21.201940 | 2b3be337-eb47-4d2e-9314-ab2143d3ecf7 ==============================
+[0m22:45:21.201940 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:45:21.202383 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m22:45:21.204611 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'fiery-tribute-466414-s2'
+[0m22:45:21.217681 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.12485888, "process_in_blocks": "0", "process_kernel_time": 0.42905, "process_mem_max_rss": "88129536", "process_out_blocks": "0", "process_user_time": 1.355292}
+[0m22:45:21.218005 [debug] [MainThread]: Command `dbt run` failed at 22:45:21.217931 after 0.13 seconds
+[0m22:45:21.218255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049f51d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100edfc90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e0210>]}
+[0m22:45:21.218505 [debug] [MainThread]: Flushing usage events
+[0m22:45:22.337416 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:45:45.686967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106912590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106918d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10692dbd0>]}
+
+
+============================== 22:45:45.690302 | 5ee94b79-6530-4f59-813a-0ea617eb9825 ==============================
+[0m22:45:45.690302 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:45:45.690593 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'debug': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:45:53.050696 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'vertigo-case' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/dbt_project.yml
+[0m22:45:53.054791 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.4157133, "process_in_blocks": "0", "process_kernel_time": 1.551895, "process_mem_max_rss": "173572096", "process_out_blocks": "0", "process_user_time": 3.051137}
+[0m22:45:53.055022 [debug] [MainThread]: Command `dbt run` failed at 22:45:53.054970 after 7.42 seconds
+[0m22:45:53.055216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10692da50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1011a7c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129be4a50>]}
+[0m22:45:53.055415 [debug] [MainThread]: Flushing usage events
+[0m22:45:53.767118 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:46:22.864335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cb54d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d29a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d2a210>]}
+
+
+============================== 22:46:22.867760 | ee5f60ed-5fbc-495f-9e27-d5609fe66d2b ==============================
+[0m22:46:22.867760 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:46:22.868067 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:46:23.838177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1633ea9d0>]}
+[0m22:46:23.860119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a4f750>]}
+[0m22:46:23.860436 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:46:24.153376 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:46:24.153927 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:46:24.154139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x163ca07d0>]}
+[0m22:46:24.863732 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.daily_metrics
+[0m22:46:24.867329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1633b3a10>]}
+[0m22:46:24.886679 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:46:24.895335 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:46:25.027017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x163f7c890>]}
+[0m22:46:25.027575 [info ] [MainThread]: Found 491 macros
+[0m22:46:25.027904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee5f60ed-5fbc-495f-9e27-d5609fe66d2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x163c44310>]}
+[0m22:46:25.029254 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:46:25.029668 [debug] [MainThread]: Command end result
+[0m22:46:25.045297 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:46:25.046780 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:46:25.049291 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/run_results.json
+[0m22:46:25.053270 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.2253444, "process_in_blocks": "0", "process_kernel_time": 0.773532, "process_mem_max_rss": "179568640", "process_out_blocks": "0", "process_user_time": 2.931016}
+[0m22:46:25.053521 [debug] [MainThread]: Command `dbt run` succeeded at 22:46:25.053469 after 2.23 seconds
+[0m22:46:25.053762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102af3c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078dc910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b2fed0>]}
+[0m22:46:25.053983 [debug] [MainThread]: Flushing usage events
+[0m22:46:25.757034 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:47:33.063554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106620f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106699950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10669a150>]}
+
+
+============================== 22:47:33.067774 | 1386a047-2ee5-4072-8add-7f23b8901665 ==============================
+[0m22:47:33.067774 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:47:33.068059 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:47:34.209853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1386a047-2ee5-4072-8add-7f23b8901665', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f127550>]}
+[0m22:47:34.231832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1386a047-2ee5-4072-8add-7f23b8901665', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ac4090>]}
+[0m22:47:34.232131 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:47:34.313951 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:47:34.382829 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:47:34.383092 [debug] [MainThread]: Partial parsing: added file: vertigo_case://models/daily_metrics.sql
+[0m22:47:34.501744 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.vertigo_case.daily_metrics' (models/daily_metrics.sql) depends on a source named 'bi_projects.dataset' which was not found
+[0m22:47:34.505249 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4832532, "process_in_blocks": "0", "process_kernel_time": 1.731958, "process_mem_max_rss": "181288960", "process_out_blocks": "0", "process_user_time": 2.005684}
+[0m22:47:34.505463 [debug] [MainThread]: Command `dbt run` failed at 22:47:34.505420 after 1.48 seconds
+[0m22:47:34.505635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106699dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102b1fc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106641490>]}
+[0m22:47:34.505802 [debug] [MainThread]: Flushing usage events
+[0m22:47:35.561059 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:48:06.443316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106978290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069d6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f1d10>]}
+
+
+============================== 22:48:06.446448 | 7807ba8e-ee1a-4405-9257-dfe94f07bebe ==============================
+[0m22:48:06.446448 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:48:06.446730 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:48:07.453945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7807ba8e-ee1a-4405-9257-dfe94f07bebe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f157f10>]}
+[0m22:48:07.477707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7807ba8e-ee1a-4405-9257-dfe94f07bebe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104da4690>]}
+[0m22:48:07.478075 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:48:07.557062 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:48:07.628294 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:48:07.628544 [debug] [MainThread]: Partial parsing: added file: vertigo_case://models/daily_metrics.sql
+[0m22:48:07.762933 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.daily_metrics
+[0m22:48:07.765170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7807ba8e-ee1a-4405-9257-dfe94f07bebe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f27df50>]}
+[0m22:48:07.789502 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:48:07.792068 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:48:07.805935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7807ba8e-ee1a-4405-9257-dfe94f07bebe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f70a590>]}
+[0m22:48:07.806143 [info ] [MainThread]: Found 1 model, 491 macros
+[0m22:48:07.806283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7807ba8e-ee1a-4405-9257-dfe94f07bebe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f77c5d0>]}
+[0m22:48:07.807007 [info ] [MainThread]: 
+[0m22:48:07.807163 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:48:07.807274 [info ] [MainThread]: 
+[0m22:48:07.807473 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:48:07.807828 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_fiery-tribute-466414-s2'
+[0m22:48:07.808002 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:48:07.808163 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m22:48:07.808361 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:48:07.808487 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m22:48:07.808609 [info ] [MainThread]: 
+[0m22:48:07.808725 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.00 seconds (0.00s).
+[0m22:48:07.808909 [error] [MainThread]: Encountered an error:
+Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m22:48:07.811885 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4068813, "process_in_blocks": "0", "process_kernel_time": 0.562188, "process_mem_max_rss": "185335808", "process_out_blocks": "0", "process_user_time": 2.898185}
+[0m22:48:07.812056 [debug] [MainThread]: Command `dbt run` failed at 22:48:07.812019 after 1.41 seconds
+[0m22:48:07.812195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10697a790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102e23c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f1310>]}
+[0m22:48:07.812332 [debug] [MainThread]: Flushing usage events
+[0m22:48:08.497481 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:49:05.006081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b53d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055f0d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f39710>]}
+
+
+============================== 22:49:05.009160 | 4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0 ==============================
+[0m22:49:05.009160 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:49:05.009449 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m22:49:06.084359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055c0c90>]}
+[0m22:49:06.106571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a160d0>]}
+[0m22:49:06.106876 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:49:06.183477 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:49:06.210852 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:49:06.211102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b33650>]}
+[0m22:49:06.699468 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.daily_metrics
+[0m22:49:06.702046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127c82650>]}
+[0m22:49:06.727167 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:49:06.729644 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:49:06.741875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127ef48d0>]}
+[0m22:49:06.742091 [info ] [MainThread]: Found 1 model, 491 macros
+[0m22:49:06.742231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127ae1c90>]}
+[0m22:49:06.743011 [info ] [MainThread]: 
+[0m22:49:06.743194 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:49:06.743341 [info ] [MainThread]: 
+[0m22:49:06.743667 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:49:06.744058 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_fiery-tribute-466414-s2'
+[0m22:49:06.744206 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:49:07.894156 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2, now list_fiery-tribute-466414-s2_bi_projects)
+[0m22:49:07.895266 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:49:10.038351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127ec9e10>]}
+[0m22:49:10.042068 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:49:10.047404 [debug] [Thread-1 (]: Began running node model.vertigo_case.daily_metrics
+[0m22:49:10.048014 [info ] [Thread-1 (]: 1 of 1 START sql table model bi_projects.daily_metrics ......................... [RUN]
+[0m22:49:10.048481 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2_bi_projects, now model.vertigo_case.daily_metrics)
+[0m22:49:10.048830 [debug] [Thread-1 (]: Began compiling node model.vertigo_case.daily_metrics
+[0m22:49:10.059150 [debug] [Thread-1 (]: Writing injected SQL for node "model.vertigo_case.daily_metrics"
+[0m22:49:10.060864 [debug] [Thread-1 (]: Began executing node model.vertigo_case.daily_metrics
+[0m22:49:10.094218 [debug] [Thread-1 (]: Writing runtime sql for node "model.vertigo_case.daily_metrics"
+[0m22:49:10.095641 [debug] [Thread-1 (]: On model.vertigo_case.daily_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "fiery-tribute-466414-s2", "target_name": "dev", "node_id": "model.vertigo_case.daily_metrics"} */
+
+  
+    
+
+    create or replace table `fiery-tribute-466414-s2`.`bi_projects`.`daily_metrics`
+      
+    partition by event_date
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH daily_aggregates AS (
+  SELECT
+    event_date,
+    country,
+    platform,
+    COUNT(DISTINCT user_id) as dau,
+    SUM(COALESCE(iap_revenue, 0)) as total_iap_revenue,
+    SUM(COALESCE(ad_revenue, 0)) as total_ad_revenue,
+    SUM(COALESCE(match_start_count, 0)) as matches_started,
+    SUM(COALESCE(match_end_count, 0)) as matches_ended,
+    SUM(COALESCE(victory_count, 0)) as total_victories,
+    SUM(COALESCE(defeat_count, 0)) as total_defeats,
+    SUM(COALESCE(server_connection_error, 0)) as total_server_errors
+  FROM bi_projects.dataset
+  WHERE event_date IS NOT NULL
+    AND user_id IS NOT NULL
+    AND country IS NOT NULL
+    AND platform IS NOT NULL
+  GROUP BY 1, 2, 3
+)
+
+SELECT
+  event_date,
+  country,
+  platform,
+  dau,
+  total_iap_revenue,
+  total_ad_revenue,
+  
+  -- ARPDAU calculation
+  CASE 
+    WHEN dau > 0 THEN (total_iap_revenue + total_ad_revenue) / dau 
+    ELSE 0 
+  END as arpdau,
+  
+  matches_started,
+  
+  -- Match per DAU
+  CASE 
+    WHEN dau > 0 THEN matches_started / dau 
+    ELSE 0 
+  END as match_per_dau,
+  
+  -- Win ratio
+  CASE 
+    WHEN matches_ended > 0 THEN total_victories / matches_ended 
+    ELSE 0 
+  END as win_ratio,
+  
+  -- Defeat ratio
+  CASE 
+    WHEN matches_ended > 0 THEN total_defeats / matches_ended 
+    ELSE 0 
+  END as defeat_ratio,
+  
+  -- Server error per DAU
+  CASE 
+    WHEN dau > 0 THEN total_server_errors / dau 
+    ELSE 0 
+  END as server_error_per_dau
+
+FROM daily_aggregates
+WHERE dau > 0  -- Filter out days with no active users
+    );
+  
+[0m22:49:10.095940 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:49:10.927831 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fiery-tribute-466414-s2&j=bq:EU:641703ca-a127-4aec-a68d-d032ec3dc06f&page=queryresults
+[0m22:49:10.928672 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fiery-tribute-466414-s2&j=bq:EU:641703ca-a127-4aec-a68d-d032ec3dc06f&page=queryresults
+[0m22:49:11.007634 [debug] [Thread-1 (]: Database Error in model daily_metrics (models/daily_metrics.sql)
+  Not found: Dataset fiery-tribute-466414-s2:bi_projects was not found in location EU
+  compiled code at target/run/vertigo_case/models/daily_metrics.sql
+[0m22:49:11.018735 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4e09e77a-11d2-4ee9-a9d8-5bd7a8c543a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127fecdd0>]}
+[0m22:49:11.020353 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model bi_projects.daily_metrics ................ [[31mERROR[0m in 0.96s]
+[0m22:49:11.021098 [debug] [Thread-1 (]: Finished running node model.vertigo_case.daily_metrics
+[0m22:49:11.021708 [debug] [Thread-4 (]: Marking all children of 'model.vertigo_case.daily_metrics' to be skipped because of status 'error'.  Reason: Database Error in model daily_metrics (models/daily_metrics.sql)
+  Not found: Dataset fiery-tribute-466414-s2:bi_projects was not found in location EU
+  compiled code at target/run/vertigo_case/models/daily_metrics.sql.
+[0m22:49:11.024850 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:49:11.027373 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:49:11.027788 [debug] [MainThread]: Connection 'model.vertigo_case.daily_metrics' was properly closed.
+[0m22:49:11.028184 [info ] [MainThread]: 
+[0m22:49:11.028576 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.28 seconds (4.28s).
+[0m22:49:11.029312 [debug] [MainThread]: Command end result
+[0m22:49:11.050574 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:49:11.053205 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:49:11.058888 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/run_results.json
+[0m22:49:11.059139 [info ] [MainThread]: 
+[0m22:49:11.059425 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m22:49:11.059619 [info ] [MainThread]: 
+[0m22:49:11.059857 [error] [MainThread]:   Database Error in model daily_metrics (models/daily_metrics.sql)
+  Not found: Dataset fiery-tribute-466414-s2:bi_projects was not found in location EU
+  compiled code at target/run/vertigo_case/models/daily_metrics.sql
+[0m22:49:11.060046 [info ] [MainThread]: 
+[0m22:49:11.060244 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m22:49:11.065417 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 6.1013207, "process_in_blocks": "0", "process_kernel_time": 0.476123, "process_mem_max_rss": "188825600", "process_out_blocks": "0", "process_user_time": 3.814409}
+[0m22:49:11.066053 [debug] [MainThread]: Command `dbt run` failed at 22:49:11.065993 after 6.10 seconds
+[0m22:49:11.066941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e7790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105612c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053f0250>]}
+[0m22:49:11.067239 [debug] [MainThread]: Flushing usage events
+[0m22:49:12.011381 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:49:31.488715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104645690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046bd550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046bdd50>]}
+
+
+============================== 22:49:31.491873 | a58cd453-f064-48bf-95ca-cb22a24e4c7b ==============================
+[0m22:49:31.491873 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:49:31.492158 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:49:32.433770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c48a4d0>]}
+[0m22:49:32.458650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102ad6590>]}
+[0m22:49:32.459030 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:49:32.537784 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:49:32.565718 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:49:32.565981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10392f6d0>]}
+[0m22:49:33.032242 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.daily_metrics
+[0m22:49:33.034395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1301e7d50>]}
+[0m22:49:33.058178 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:49:33.061706 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:49:33.080382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1303f70d0>]}
+[0m22:49:33.080591 [info ] [MainThread]: Found 1 model, 491 macros
+[0m22:49:33.080733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11f68a990>]}
+[0m22:49:33.081456 [info ] [MainThread]: 
+[0m22:49:33.081607 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:49:33.081712 [info ] [MainThread]: 
+[0m22:49:33.081911 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:49:33.082257 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_fiery-tribute-466414-s2'
+[0m22:49:33.082401 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:49:34.056257 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2, now list_fiery-tribute-466414-s2_bi_projects)
+[0m22:49:34.057244 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:49:35.159009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1301d8490>]}
+[0m22:49:35.160282 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:49:35.164747 [debug] [Thread-1 (]: Began running node model.vertigo_case.daily_metrics
+[0m22:49:35.165553 [info ] [Thread-1 (]: 1 of 1 START sql table model bi_projects.daily_metrics ......................... [RUN]
+[0m22:49:35.166140 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2_bi_projects, now model.vertigo_case.daily_metrics)
+[0m22:49:35.166763 [debug] [Thread-1 (]: Began compiling node model.vertigo_case.daily_metrics
+[0m22:49:35.176399 [debug] [Thread-1 (]: Writing injected SQL for node "model.vertigo_case.daily_metrics"
+[0m22:49:35.177694 [debug] [Thread-1 (]: Began executing node model.vertigo_case.daily_metrics
+[0m22:49:35.212263 [debug] [Thread-1 (]: Writing runtime sql for node "model.vertigo_case.daily_metrics"
+[0m22:49:35.213081 [debug] [Thread-1 (]: On model.vertigo_case.daily_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "fiery-tribute-466414-s2", "target_name": "dev", "node_id": "model.vertigo_case.daily_metrics"} */
+
+  
+    
+
+    create or replace table `fiery-tribute-466414-s2`.`bi_projects`.`daily_metrics`
+      
+    partition by event_date
+    
+
+    OPTIONS()
+    as (
+      
+
+WITH daily_aggregates AS (
+  SELECT
+    event_date,
+    country,
+    platform,
+    COUNT(DISTINCT user_id) as dau,
+    SUM(COALESCE(iap_revenue, 0)) as total_iap_revenue,
+    SUM(COALESCE(ad_revenue, 0)) as total_ad_revenue,
+    SUM(COALESCE(match_start_count, 0)) as matches_started,
+    SUM(COALESCE(match_end_count, 0)) as matches_ended,
+    SUM(COALESCE(victory_count, 0)) as total_victories,
+    SUM(COALESCE(defeat_count, 0)) as total_defeats,
+    SUM(COALESCE(server_connection_error, 0)) as total_server_errors
+  FROM bi_projects.dataset
+  WHERE event_date IS NOT NULL
+    AND user_id IS NOT NULL
+    AND country IS NOT NULL
+    AND platform IS NOT NULL
+  GROUP BY 1, 2, 3
+)
+
+SELECT
+  event_date,
+  country,
+  platform,
+  dau,
+  total_iap_revenue,
+  total_ad_revenue,
+  
+  -- ARPDAU calculation
+  CASE 
+    WHEN dau > 0 THEN (total_iap_revenue + total_ad_revenue) / dau 
+    ELSE 0 
+  END as arpdau,
+  
+  matches_started,
+  
+  -- Match per DAU
+  CASE 
+    WHEN dau > 0 THEN matches_started / dau 
+    ELSE 0 
+  END as match_per_dau,
+  
+  -- Win ratio
+  CASE 
+    WHEN matches_ended > 0 THEN total_victories / matches_ended 
+    ELSE 0 
+  END as win_ratio,
+  
+  -- Defeat ratio
+  CASE 
+    WHEN matches_ended > 0 THEN total_defeats / matches_ended 
+    ELSE 0 
+  END as defeat_ratio,
+  
+  -- Server error per DAU
+  CASE 
+    WHEN dau > 0 THEN total_server_errors / dau 
+    ELSE 0 
+  END as server_error_per_dau
+
+FROM daily_aggregates
+WHERE dau > 0  -- Filter out days with no active users
+    );
+  
+[0m22:49:35.213408 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:49:36.786740 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fiery-tribute-466414-s2&j=bq:US:9007d21c-04ce-4323-9079-94f16386a291&page=queryresults
+[0m22:49:46.026273 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a58cd453-f064-48bf-95ca-cb22a24e4c7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1303ca750>]}
+[0m22:49:46.028445 [info ] [Thread-1 (]: 1 of 1 OK created sql table model bi_projects.daily_metrics .................... [[32mCREATE TABLE (11.4k rows, 691.3 MiB processed)[0m in 10.86s]
+[0m22:49:46.029208 [debug] [Thread-1 (]: Finished running node model.vertigo_case.daily_metrics
+[0m22:49:46.031186 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:49:46.034784 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:49:46.035111 [debug] [MainThread]: Connection 'model.vertigo_case.daily_metrics' was properly closed.
+[0m22:49:46.035457 [info ] [MainThread]: 
+[0m22:49:46.035761 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 12.95 seconds (12.95s).
+[0m22:49:46.036540 [debug] [MainThread]: Command end result
+[0m22:49:46.058074 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:49:46.060562 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:49:46.065252 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/run_results.json
+[0m22:49:46.065496 [info ] [MainThread]: 
+[0m22:49:46.066311 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:49:46.066493 [info ] [MainThread]: 
+[0m22:49:46.067251 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m22:49:46.081639 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.632553, "process_in_blocks": "0", "process_kernel_time": 0.863532, "process_mem_max_rss": "185532416", "process_out_blocks": "0", "process_user_time": 3.60261}
+[0m22:49:46.081936 [debug] [MainThread]: Command `dbt run` succeeded at 22:49:46.081886 after 14.63 seconds
+[0m22:49:46.082227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b7f450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b43c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b43110>]}
+[0m22:49:46.082431 [debug] [MainThread]: Flushing usage events
+[0m22:49:46.818574 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:57:03.613468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082acd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108311450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082e12d0>]}
+
+
+============================== 22:57:03.616714 | b07cba43-601d-495e-9527-d079c19c17fb ==============================
+[0m22:57:03.616714 [info ] [MainThread]: Running with dbt=1.9.2
+[0m22:57:03.617011 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/logs', 'debug': 'False', 'profiles_dir': '/Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select daily_metrics', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:57:04.562773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f82390>]}
+[0m22:57:04.585161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106703590>]}
+[0m22:57:04.585465 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m22:57:04.666953 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m22:57:04.810247 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m22:57:04.810592 [debug] [MainThread]: Partial parsing: added file: vertigo_case://models/schema.yml
+[0m22:57:04.810771 [debug] [MainThread]: Partial parsing: updated file: vertigo_case://models/daily_metrics.sql
+[0m22:57:05.057180 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.daily_metrics
+[0m22:57:05.062316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13ddf6dd0>]}
+[0m22:57:05.101066 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:57:05.103983 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:57:05.124321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13eb17090>]}
+[0m22:57:05.124569 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 491 macros
+[0m22:57:05.124718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13ddf5450>]}
+[0m22:57:05.125350 [info ] [MainThread]: 
+[0m22:57:05.125497 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:57:05.125603 [info ] [MainThread]: 
+[0m22:57:05.125801 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:57:05.126170 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_fiery-tribute-466414-s2'
+[0m22:57:05.126337 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:57:06.206618 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2, now list_fiery-tribute-466414-s2_bi_projects)
+[0m22:57:06.207208 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:57:07.055159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e8a0650>]}
+[0m22:57:07.056428 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:57:07.061284 [debug] [Thread-1 (]: Began running node model.vertigo_case.daily_metrics
+[0m22:57:07.062332 [info ] [Thread-1 (]: 1 of 1 START sql incremental model bi_projects.daily_metrics ................... [RUN]
+[0m22:57:07.063215 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_fiery-tribute-466414-s2_bi_projects, now model.vertigo_case.daily_metrics)
+[0m22:57:07.063665 [debug] [Thread-1 (]: Began compiling node model.vertigo_case.daily_metrics
+[0m22:57:07.081469 [debug] [Thread-1 (]: Writing injected SQL for node "model.vertigo_case.daily_metrics"
+[0m22:57:07.083682 [debug] [Thread-1 (]: Began executing node model.vertigo_case.daily_metrics
+[0m22:57:07.130427 [debug] [Thread-1 (]: Writing runtime sql for node "model.vertigo_case.daily_metrics"
+[0m22:57:07.131713 [debug] [Thread-1 (]: On model.vertigo_case.daily_metrics: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "fiery-tribute-466414-s2", "target_name": "dev", "node_id": "model.vertigo_case.daily_metrics"} */
+
+  
+    
+
+    create or replace table `fiery-tribute-466414-s2`.`bi_projects`.`daily_metrics`
+      
+    partition by event_date
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+  event_date,
+  country,
+  platform,
+  COUNT(DISTINCT user_id) as dau,
+  SUM(COALESCE(iap_revenue, 0)) as total_iap_revenue,
+  SUM(COALESCE(ad_revenue, 0)) as total_ad_revenue,
+  
+  -- ARPDAU calculation
+  CASE 
+    WHEN COUNT(DISTINCT user_id) > 0 
+    THEN (SUM(COALESCE(iap_revenue, 0)) + SUM(COALESCE(ad_revenue, 0))) / COUNT(DISTINCT user_id)
+    ELSE 0 
+  END as arpdau,
+  
+  SUM(COALESCE(match_start_count, 0)) as matches_started,
+  
+  -- Match per DAU
+  CASE 
+    WHEN COUNT(DISTINCT user_id) > 0 
+    THEN SUM(COALESCE(match_start_count, 0)) / COUNT(DISTINCT user_id)
+    ELSE 0 
+  END as match_per_dau,
+  
+  -- Win ratio
+  CASE 
+    WHEN SUM(COALESCE(match_end_count, 0)) > 0 
+    THEN SUM(COALESCE(victory_count, 0)) / SUM(COALESCE(match_end_count, 0))
+    ELSE 0 
+  END as win_ratio,
+  
+  -- Defeat ratio
+  CASE 
+    WHEN SUM(COALESCE(match_end_count, 0)) > 0 
+    THEN SUM(COALESCE(defeat_count, 0)) / SUM(COALESCE(match_end_count, 0))
+    ELSE 0 
+  END as defeat_ratio,
+  
+  -- Server error per DAU
+  CASE 
+    WHEN COUNT(DISTINCT user_id) > 0 
+    THEN SUM(COALESCE(server_connection_error, 0)) / COUNT(DISTINCT user_id)
+    ELSE 0 
+  END as server_error_per_dau
+
+FROM `fiery-tribute-466414-s2`.`bi_projects`.`dataset`
+WHERE event_date IS NOT NULL
+  AND user_id IS NOT NULL
+  AND country IS NOT NULL
+  AND platform IS NOT NULL
+  
+  
+  
+GROUP BY event_date, country, platform
+    );
+  
+[0m22:57:07.131966 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:57:08.197840 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=fiery-tribute-466414-s2&j=bq:US:3620ceae-a61d-487c-af9d-1379ab430afd&page=queryresults
+[0m22:57:15.853910 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b07cba43-601d-495e-9527-d079c19c17fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13ea98bd0>]}
+[0m22:57:15.855330 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model bi_projects.daily_metrics .............. [[32mCREATE TABLE (11.4k rows, 691.3 MiB processed)[0m in 8.79s]
+[0m22:57:15.856063 [debug] [Thread-1 (]: Finished running node model.vertigo_case.daily_metrics
+[0m22:57:15.859264 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:57:15.864027 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:57:15.864301 [debug] [MainThread]: Connection 'model.vertigo_case.daily_metrics' was properly closed.
+[0m22:57:15.864598 [info ] [MainThread]: 
+[0m22:57:15.865025 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 10.74 seconds (10.74s).
+[0m22:57:15.865858 [debug] [MainThread]: Command end result
+[0m22:57:15.890249 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/manifest.json
+[0m22:57:15.895498 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/semantic_manifest.json
+[0m22:57:15.912475 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/selcukkocabiyik/Desktop/case-repo/vertigo-dbt-case/target/run_results.json
+[0m22:57:15.912900 [info ] [MainThread]: 
+[0m22:57:15.913628 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:57:15.914188 [info ] [MainThread]: 
+[0m22:57:15.914535 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m22:57:15.920790 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 12.35188, "process_in_blocks": "0", "process_kernel_time": 0.497236, "process_mem_max_rss": "191971328", "process_out_blocks": "0", "process_user_time": 3.611528}
+[0m22:57:15.921610 [debug] [MainThread]: Command `dbt run` succeeded at 22:57:15.921458 after 12.35 seconds
+[0m22:57:15.922171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080dfd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104747cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13dd6f690>]}
+[0m22:57:15.922401 [debug] [MainThread]: Flushing usage events
+[0m22:57:16.862990 [debug] [MainThread]: An error was encountered while trying to flush usage events
