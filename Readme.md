@@ -6,17 +6,39 @@ Kullanıcı seviyesindeki günlük oyun metriklerinden toplanmış günlük metr
 
 Bu proje, ham kullanıcı seviyesindeki günlük oyun metriklerini, oyun oynama, para kazanma ve performans sinyallerini gün, ülke ve platform bazında özetleyen toplanmış bir modele dönüştürür.
 
+## Projede Yapılanlar
+
+### 1. Veri Analizi ve Kalite Kontrolü
+- Ham veri setindeki anomaliler ve null değerler kontrol edildi
+- user_id benzersizliğini gün bazında doğrulandı
+- BQ'da Manuel query ile negatif gelir bulunmadığı doğrulandı
+- Kritik alanlardaki veri tutarlılığı test edildi
+
+### 2. DAU Hesaplama Yaklaşımı
+**Neden session >= 10 veya total_revenue > 0 kullandık:**
+- Bu yaklaşım daha güvenilir ve tutarlı DAU metrikleri sağlıyor
+- Kullanıcıların aktifliğini ga4 seviyesinde 3 kriterden biri olan session duration ile eşitledik. 
+- Günlük aktiflik için günlük total duration modeli kullanıldı.
+
+### 3. Incremental Model Stratejisi
+**Neden unique ve son 3 gün stratejisi seçtik:**
+- GA4 verilerinden oluşturulduğu varsayıldığı için tam doğru veri için Google 3 günlük delay belirtir
+- Geç gelen veri var ise otomatik olarak eski partitionlar güncelliyor
+- Unique column ile veri duplikasyonunu önleniyor
+- Performans açısından daha verimli
+
+### 4. Temel Metrikler
+- **DAU**: Günlük Aktif Kullanıcılar (unique user_id count || IAP + ADR > 0 || daily_session_dur > 10)
+- **ARPDAU**: DAU başına ortalama gelir (IAP + Ad revenue / DAU)
+- **Match per DAU**: Kullanıcı başına ortalama maç sayısı
+- **Win/Defeat Ratio**: Sadece tamamlanan maçlar üzerinden hesaplandı
+- **Server Error per DAU**: Platform kararlılığı göstergesi
+
+## Teknik Detaylar
 
 ### Gereksinimler
 - DBT Core kurulu
-- Google Cloud SDK yapılandırılmış
 - BigQuery dataset erişimi: `fiery-tribute-466414-s2.bi_projects`
-
-### Yükleme
-```bash
-pip install dbt-bigquery
-dbt deps
-```
 
 ### Yapılandırma
 `profiles.yml` dosyanızı BigQuery bilgilerinizle güncelleyin:
@@ -33,100 +55,61 @@ daily_metrics:
       keyfile: path/to/service-account.json
 ```
 
-## Veri Kaynakları
+## Veri Modeli
 
-### Ham Veri Şeması
-- **Tablo**: `raw_user_daily_metrics`
-- **Sütunlar**:
-  - user_id: Benzersiz kullanıcı tanımlayıcısı
-  - event_date: Aktivite tarihi
-  - install_date: Kullanıcı kurulum tarihi
-  - platform: ANDROID/IOS
-  - country: Kullanıcı ülkesi
-  - total_session_count: Günlük oturum sayısı
-  - total_session_duration: Günlük oturum süresi
-  - match_start_count: Başlatılan maç sayısı
-  - match_end_count: Tamamlanan maç sayısı
-  - victory_count: Kazanılan maç sayısı
-  - defeat_count: Kaybedilen maç sayısı
-  - server_connection_error: Sunucu hata sayısı
-  - iap_revenue: Uygulama içi satın alma geliri
-  - ad_revenue: Reklam geliri
+### Ham Veri (raw_user_daily_metrics)
+Her satır bir kullanıcının belirli bir gündeki aktivitesini temsil eder:
+- user_id, event_date, install_date
+- platform (ANDROID/IOS), country
+- Oyun metrikleri: session count/duration, match counts
+- Para kazanma: iap_revenue, ad_revenue
+- Performans: server_connection_error
 
-## Modeller
+### Çıktı Modeli (daily_metrics)
+event_date, country, platform bazında toplanmış metrikler:
 
-### daily_metrics
-event_date, country ve platform bazında toplanmış metrikler:
+| Alan | Açıklama |
+|------|----------|
+| event_date | Aktivite tarihi |
+| country | Kullanıcının ülkesi |
+| platform | ANDROID/IOS |
+| dau | Günlük Aktif Kullanıcılar |
+| total_iap_revenue | Toplam IAP geliri |
+| total_ad_revenue | Toplam reklam geliri |
+| arpdau | DAU başına ortalama gelir |
+| matches_started | Başlatılan toplam maç |
+| match_per_dau | DAU başına ortalama maç |
+| win_ratio | Kazanma oranı (victory/match_end) |
+| defeat_ratio | Kaybetme oranı (defeat/match_end) |
+| server_error_per_dau | DAU başına sunucu hatası |
 
-- **event_date**: Aktivite tarihi
-- **country**: Kullanıcının ülkesi
-- **platform**: Kullanıcının platformu
-- **dau**: Günlük Aktif Kullanıcılar
-- **total_iap_revenue**: Toplam IAP geliri
-- **total_ad_revenue**: Toplam reklam geliri
-- **arpdau**: DAU başına ortalama gelir
-- **matches_started**: Başlatılan toplam maç
-- **match_per_dau**: DAU başına ortalama maç
-- **win_ratio**: Kazanma oranı
-- **defeat_ratio**: Kaybetme oranı
-- **server_error_per_dau**: DAU başına sunucu hatası
-
-## Kullanım
-
-```bash
-# Modelleri çalıştır
-dbt run
-
-# Modelleri test et
-dbt test
-
-# Döküman oluştur
-dbt docs generate
-dbt docs serve
-```
 
 ## Proje Yapısı
 
 ```
 .
+├── Readme.md
 ├── dbt_project.yml
-├── models/
-│   ├── schema.yml
-│   └── daily_metrics.sql
-├── profiles.yml.example
-└── README.md
+├── images
+│   └── image.png
+├── models
+│   ├── daily_metrics.sql
+│   └── schema.yml
+├── profiles.yml
+└── schema.yaml
 ```
 
-![Output Model Verisi](images/image.png)
+## BQ Ekran Görüntüsü
 
-### Veri Kalite Kontrolleri
-- user_id benzersizliğini gün bazında doğrulandı
-- Kritik alanlardaki null değerler kontrol edildi
-- Gelir alanlarının negatif olmadığı doğrulandı
-
-### Varsayımlar
-- Match end count tamamlanan maçları temsil eder
-- Sunucu hataları kullanıcı başına gün bazında kümülatiftir
-- Gelir alanları aynı para birimindedir
-
-### İş Metrikleri
-- ARPDAU hem IAP hem de reklam gelirini birleştirir
-- Kazanma/kaybetme oranları sadece tamamlanan maçlar için hesaplanır
-- Sunucu hata oranı platform kararlılığını gösterir
+![Output Ekran Görüntüsü](images/image.png)
 
 ## Performans Optimizasyonları
 
-### Uygulanmış
-- Verimli sorgulama için event_date'e göre bölümleme
-- country ve platform'a göre kümeleme
-- Büyük veri setleri için incremental model
+### Uygulanmış Optimizasyonlar
+- **Partitioning**: event_date'e göre bölümleme
+- **Incremental Loading**: Sadece yeni/değişen veriler işleniyor
+- **Unique Strategy**: Duplicate verileri otomatik temizleme
 
-## Dashboard
-
-Looker Studio'da oluşturulan interaktif dashboard:
-- Günlük kullanıcı trendleri
-- Ülke/platform bazında gelir metrikleri
-- Maç tamamlama ve kazanma oranları
-- Platform performans göstergeleri
+## Dashboard ve Görselleştirme
 
 **Dashboard Linki**: [Dashboard'a Git](https://lookerstudio.google.com/u/3/reporting/25c25485-0cc7-4789-a368-344dbb65465a/page/tEnnC/edit)
