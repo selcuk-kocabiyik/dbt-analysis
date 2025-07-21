@@ -6,8 +6,6 @@ Kullanıcı seviyesindeki günlük oyun metriklerinden toplanmış günlük metr
 
 Bu proje, ham kullanıcı seviyesindeki günlük oyun metriklerini, oyun oynama, para kazanma ve performans sinyallerini gün, ülke ve platform bazında özetleyen toplanmış bir modele dönüştürür.
 
-![Output Model Verisi](images/example.png)
-
 
 ### Gereksinimler
 - DBT Core kurulu
@@ -99,7 +97,7 @@ dbt docs serve
 └── README.md
 ```
 
-## Temel Bulgular ve Varsayımlar
+![Output Model Verisi](images/image.png)
 
 ### Veri Kalite Kontrolleri
 - user_id benzersizliğini gün bazında doğrulandı
@@ -131,4 +129,4 @@ Looker Studio'da oluşturulan interaktif dashboard:
 - Maç tamamlama ve kazanma oranları
 - Platform performans göstergeleri
 
-**Dashboard Linki**: [Oluşturulduktan sonra eklenecek]
+**Dashboard Linki**: [Dashboard'a Git](https://lookerstudio.google.com/u/3/reporting/25c25485-0cc7-4789-a368-344dbb65465a/page/tEnnC/edit)
